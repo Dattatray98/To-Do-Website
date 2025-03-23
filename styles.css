@@ -71,19 +71,25 @@
     height: 25px;
 }
 
+/* adding list name styling */
 
 .add {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 10px;
     width: 93%;
+    height: 40px;
     display: flex;
     align-items: center;
+    border: 2px solid rgb(1, 101, 94);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .add-img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,17 +108,64 @@
     height: 18px;
 }
 
-.add h4 {
-    margin-left: 10px;
+
+.list-name{
+    margin-left: 5px;
+    width: 85%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
     font-family: Chakra Petch;
 }
+
+
+.list-container{
+    position: absolute;
+    top: 125px;
+    left: 10px;
+    width: 95%;
+    max-height: 65vh;
+    padding: 5px;
+}
+
+.addlist{
+    border: 2px solid red;
+}
+
+
+.al{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.list-container h4{
+    display: flex;
+    margin-left: 15px;
+    font-family: Chakra Petch;
+    font-size: 17px;
+    color: rgb(1, 49, 62);
+
+}
+
+.del-list{
+    width: 15px;
+    height: 15px;
+}
+
 
 /* Fix right section layout */
 .right {
     padding: 30px;
     flex-grow: 1;
     /* Take up remaining space */
-    background-image: linear-gradient(100deg, rgb(185, 232, 248), white);
+    background-image: linear-gradient(100deg, rgb(181, 233, 250), rgb(216, 247, 250));
     transition: margin-left 0.3s ease;
 }
 
@@ -125,6 +178,7 @@
     position: relative;
     top: 10px;
     height: 64vh;
+    margin-bottom: 15px;
     max-height: 100vh;
     width: 100%;
     overflow-y: scroll;
@@ -141,7 +195,7 @@
     position: relative;
     left: 80px;
     right: 50px;
-    bottom: 15px;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -291,3 +345,5 @@
     cursor: pointer;
     font-family: Chakra Petch;
 }
+
+
