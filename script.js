@@ -170,6 +170,12 @@ function left() {
     }
 
     loadLists(); // Load lists on page load
+
+
+
+    document.querySelector(".add-list").addEventListener("click",()=>{
+        document.querySelector(".heading").innerHTML =`<h1>${listName}<h1>`
+    })
 }
 
 left();
