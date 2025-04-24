@@ -3,8 +3,8 @@ import React from 'react';
 import './index.css'; // Make sure this import exists
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './App';
-import AddTaskPage from './pages/AddTaskPage';
+import App from './pages/TaskPage/App';
+import AddTaskPage from './pages/TaskPage/AddTaskPage';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

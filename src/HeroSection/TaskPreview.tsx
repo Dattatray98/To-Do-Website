@@ -30,7 +30,7 @@ export default function TaskPreview() {
           <div className="mt-4 flex items-center space-x-3">
             <button
               onClick={() => navigate("/add-task")}
-              className="flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+              className="flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition cursor-pointer"
             >
               <Plus size={20} className="mr-2" />
               Add Task

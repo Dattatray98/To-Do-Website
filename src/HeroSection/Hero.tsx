@@ -31,15 +31,29 @@ export default function Hero() {
         >
           <button
   onClick={() => {
-    const el = document.getElementById("task-preview");
+    const el = document.getElementById("task-text");
     el?.scrollIntoView({ behavior: "smooth" });
   }}
-  className="px-6 py-3 bg-indigo-600 text-white rounded-xl shadow hover:bg-indigo-700 transition"
+  className="px-6 py-3 bg-indigo-600 text-white rounded-xl shadow hover:bg-indigo-700 transition cursor-pointer"
 >
   Get Started
 </button>
 
-          <button className="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-xl hover:bg-indigo-50 transition">
+          <button
+          onClick={() => {
+            const videoSection = document.getElementById("how-it-works");
+            const video = document.getElementById("how-it-works-video") as HTMLVideoElement;
+        
+            if (videoSection && video) {
+              videoSection.scrollIntoView({ behavior: "smooth" });
+        
+              // Delay autoplay to let the scroll finish (~500ms)
+              setTimeout(() => {
+                video.play();
+              },);
+            }
+          }}
+          className="px-6 py-3 border border-indigo-600 text-blue-400 rounded-xl hover:bg-indigo-50 transition cursor-pointer">
             See How It Works
           </button>
         </motion.div>

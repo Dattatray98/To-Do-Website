@@ -10,7 +10,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-16 px-6 md:px-16">
+    <section className="py-16 px-6 md:px-16" id="task-text">
       <h2 className="text-3xl font-bold text-center text-blue-200 mb-10">Why Choose Our To-Do App?</h2>
       <ul className="grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto">
         {features.map((feature, i) => (
